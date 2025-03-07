@@ -26,7 +26,9 @@
 #define LINE_BT_UART_RX A5  // Master RX, BLE TX
 
 // Obins stock firmware has something similar to this already enabled, but disabled by default in QMK
-#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS
+
+#define TAPPING_TERM 200
 
 // SPI configuration
 #define SPI_DRIVER SPID1

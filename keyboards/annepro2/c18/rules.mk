@@ -9,6 +9,8 @@ MCU_STARTUP = ht32f523xx
 
 BOARD = ANNEPRO2_C18
 
+CONSOLE_ENABLE = yes
+
 # Bootloader selection
 BOOTLOADER = custom
 PROGRAM_CMD = annepro2_tools --boot $(BUILD_DIR)/$(TARGET).bin
