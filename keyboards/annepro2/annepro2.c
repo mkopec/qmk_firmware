@@ -130,6 +130,8 @@ void matrix_scan_kb(void) {
 
         switch (ble_status.id) {
         case BLE_STS_ID_CONNECT:
+            const ap2_led_t null_led = {0};
+            ap2_led_blink(0, 0, null_led, 0, 0);
             break;
         case BLE_STS_ID_CAPSLOCK:
             ble_capslock[ble_profile] = ble_status.status;
